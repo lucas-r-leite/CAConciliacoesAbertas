@@ -4,7 +4,6 @@ import conciliacaoMesOpen as cc
 
 app = Dash(__name__)
 df = cc.main()
-# df = pd.read_excel("Conciliacao_Abertas_Mes.xlsx")
 
 # Get unique values from the "start_date" column
 unique_dates = df["start_date"].unique()
@@ -18,7 +17,7 @@ app.layout = html.Div(
         html.Div(
             [
                 # html.Img(src="your_image_url.jpg", style={'width': '100px', 'height': '100px'}),
-                html.H3("Asset Gestão Financeira", style={"text-align": "center"}),
+                html.H3("Nome da sua Empresa", style={"text-align": "center"}),
             ]
         ),
         html.H4("Conciliações Abertas"),
